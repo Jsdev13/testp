@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="javascript.css">
+</head>
+
+<body>
+    <h1>QU'EST CE QU'UN JAVASCRIPT ?</h1>
+    <p>
+        <Strong>JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une
+            page web. </Strong> À chaque fois qu'une page web fait plus que simplement afficher du contenu statique —
+        afficher du
+        contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo
+        défilants, ou autre, JavaScript a de bonnes chances d'être impliqué. C'est la troisième couche des
+        technologies standards du web, les deux premières (HTML et CSS) étant couvertes bien plus en détail dans
+        d'autres tutoriels sur MDN.
+    </p> <br>
+    <P><strong>JavaScript</strong> est sans doute plus difficile à apprendre que les technologies connexes telles que
+        <strong>HTML et CSS.</strong> Avant
+        d'essayer d'apprendre le JavaScript, il est fortement conseillé de se familiariser d'abord avec au moins ces
+        deux technologies.
+    </P>
+    <img src="js.png" alt="jscake">
+
+
+    <ol>
+        <li><strong>HTML</strong> est un langage de balises utilisé pour structurer et donner du sens au contenu web.
+            Par
+            exemple : définir
+            des paragraphes, titres et tables de données ou encore intégrer des images ou des vidéos dans une page.
+        </li>
+        <br>
+        <li><strong>CSS</strong> est un langage de règles de style utilisé pour mettre en forme le contenu HTML. Par
+            exemple
+            : en modifiant
+            la couleur d'arrière-plan ou les polices, ou en disposant le contenu en plusieurs colonnes.</li><br>
+        <li><strong>JavaScript</strong> est un langage de programmation qui permet de créer du contenu mis à jour de
+            façon
+            dynamique, de
+            contrôler le contenu multimédia, d'animer des images, et tout ce à quoi on peut penser. Bon, peut-être pas
+            tout,
+            mais vous pouvez faire bien des choses avec quelques lignes de JavaScript.</li>
+    </ol>
+
+    <p>Les trois couches se superposent naturellement. Prenons pour exemple une simple étiquette texte. Les balises HTML
+        lui
+        donnent une structure et un but :</p>
+
+    <div class="player">
+        <p> <em>
+                <p>Player 1: Chris</p>
+            </em></p>
+    </div>
+    <img src="player.png" alt="player1">
+
+    <p><strong>Nous pouvons ensuite ajouter du CSS pour rendre cela plus joli :</strong></p>
+    <img src="player2.png" alt="player2">
+    <img src="playerchris.png" alt="player3">
+
+    <p><strong>Et enfin utiliser JavaScript pour ajouter un comportement dynamique :</strong></p>
+
+    <div class="player">
+        <p> <em>
+                <p>let para = document.querySelector("p");
+
+                    para.addEventListener("click", updateName);
+
+                    function updateName() {
+                    let name = prompt("Enter a new name");
+                    para.textContent = "Player 1: " + name;
+                    }
+                </p>
+            </em></p>
+
+    </div>
+    <img src="playerjs.png" alt="playerjs">
+    <br>
+    <button type="button">Player:Chris</button>
+    <script>
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", updateName);
+
+        function updateName() {
+            const name = prompt("Enter a new name");
+            button.textContent = `Player 1: ${name}`;
+        }
+    </script>
+    <br>
+    <video src="jsvideo.mp4" controls width="600"></video>
+
+    <footer>
+        <p>© 2024 ADRAR</p>
+    </footer>
+
+</html>
+</body>
